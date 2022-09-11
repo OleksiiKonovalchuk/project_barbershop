@@ -4,28 +4,39 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 		<title>BarberShop</title>
 	</head>
 	<body>
 		<header class="header"
-			><a href="#" class="header__logo-link">
-				<svg class="header__logo-icon">
-					<use href="./images/symbol-defs.svg#logo-icon"></use>
-				</svg>
-			</a>
-			<button class="mobile-menu__button">
-				<svg class="mobile-menu__icon">
-					<use href="./images/symbol-defs.svg#burger-icon"></use>
-				</svg> </button
+			><div class="container header__container"
+				><a href="#" class="header__logo-link">
+					<svg class="header__logo-icon" width="69" height="56">
+						<use href="./images/symbol-defs.svg#logo-icon"></use>
+					</svg>
+				</a>
+				<button class="mobile-menu__btn">
+					<svg class="mobile-menu__icon" width="40" height="40">
+						<use href="./images/symbol-defs.svg#burger-icon"></use>
+					</svg> </button></div
 		></header>
 		<main
 			><section class="hero">
-				<p class="hero__subtitle" lang="en">A hair salon for men in Kyiv</p>
-				<h1 class="hero__header" lang="en">BarberShop</h1>
-				<p class="hero__descr">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+				<div class="container"
+					><div class="subtitle-wrapper"><p class="hero__subtitle" lang="en">A hair salon for men in Kyiv</p></div>
+					<h1 class="hero__header" lang="en">BarberShop</h1>
+					<p class="hero__descr">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p></div
+				>
 			</section>
 			<section class="about-us">
-				<p class="about-us__subtitle">О НАС</p>
+				<div class="subtitle-wrapper"><p class="about-us__subtitle">О НАС</p></div>
 				<h2 class="about-us__header">Лучший Барбершоп твоего города</h2>
 				<p class="about-us__descr">Если ты хочешtь добавить в свой образ больше уверенности – тебе точно к нам.</p>
 				<p class="about-us__team"
@@ -33,7 +44,7 @@
 					нашего мастеро уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне".
 					Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p
 				>
-				<button class="about-us__btn">онлайн-запись</button>
+				<button class="about-us__btn btn">онлайн-запись</button>
 			</section>
 			<section class="services">
 				<p class="services__subtitle">Проведи время в компании лучших мастеров от 300 грн.</p>
@@ -48,7 +59,7 @@
 					<li class="services__item">Детская стрижка (до 12 лет) от 300 грн.</li>
 					<li class="services__item">Камуфлирование седины от 200 грн.</li>
 				</ul>
-				<button class="services__btn">онлайн-запись</button>
+				<button class="services__btn btn">онлайн-запись</button>
 			</section>
 			<section class="advantages">
 				<p class="advantages__subtitle">старая традиционная школа</p>
@@ -209,7 +220,7 @@
 						type="text"
 						class="contact__input"
 					/><textarea name="" id="" cols="30" rows="10" class="contact__comment"></textarea
-					><button class="contact__btn">отправить</button></form
+					><button class="contact__btn btn">отправить</button></form
 				>
 				<h2 class="contacts__address-header">Контакты</h2
 				><address class="contact__address"

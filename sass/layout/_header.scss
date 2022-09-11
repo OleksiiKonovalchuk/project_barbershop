@@ -1,3 +1,41 @@
 .header {
 	position: relative;
+
+	&__container {
+		position: absolute;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo-link {
+		color: $header-main-color;
+		transition: color $cubik;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+	&__logo-icon {
+		fill: currentColor;
+	}
+}
+.mobile-menu {
+	&__btn {
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		color: $header-main-color;
+		transition: color $cubik;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+	&__icon {
+		fill: currentColor;
+	}
 }

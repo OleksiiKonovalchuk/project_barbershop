@@ -1,0 +1,35 @@
+.about-us {
+	&__subtitle {
+		@extend %subtitle;
+		margin-bottom: 20px;
+		margin-left: 80px;
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: $dark-subtitle-color;
+			margin-right: 20px;
+			left: 0;
+			top: 50%;
+		}
+	}
+	&__header {
+		@include font(700, 28px, 33px, 0.05em);
+		margin-bottom: 20px;
+	}
+	&__descr {
+		@include font(400, 16px, 26px, 0.02em);
+		color: $dark-text-color;
+		margin-bottom: 20px;
+	}
+	&__team {
+		@include font(400, 14px, 26px, 0.02em);
+		color: $dark-text-color;
+		margin-bottom: 40px;
+	}
+	&__btn {
+		color: $dark-subtitle-color;
+	}
+}

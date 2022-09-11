@@ -1,0 +1,17 @@
+.btn {
+	display: block;
+	@include font(600, 12px, 16px, 0.09em);
+	text-transform: uppercase;
+	padding: 12px 20px;
+	border-radius: 25px;
+	color: $header-main-color;
+	border: 1px solid $accent-color;
+	background-color: transparent;
+	transition: color $cubik, background-color $cubik, border-color $cubik;
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		color: $header-main-color;
+		border-color: transparent;
+	}
+}
