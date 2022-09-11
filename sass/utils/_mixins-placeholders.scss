@@ -12,7 +12,10 @@
 %subtitle {
 	@include font(600, 11px, 15px, 0.1em);
 	text-transform: uppercase;
+	margin-bottom: 20px;
+	margin-left: 80px;
 }
 %header {
-	@include font(700, 24px, 49px, 0.05em);
+	font-family: $header-font-family;
+	@include font(700, 42px, 49px, 0.05em);
 }

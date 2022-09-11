@@ -1,0 +1,117 @@
+.contacts {
+	background-color: #191c26;
+	padding-bottom: 0;
+	&__form {
+		padding-bottom: 84px;
+		text-align: center;
+		&-header {
+			@extend %header;
+			color: $header-main-color;
+			margin-bottom: 44px;
+		}
+	}
+	&__input {
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+		color: $header-main-color;
+		padding: 8px 0;
+		transition: color $cubik, border-color $cubik;
+		&::placeholder {
+			@include font(600, 11px, 15px, 0.1em);
+			color: rgba(157, 164, 189, 0.4);
+			text-transform: uppercase;
+			transition: color $cubik, border-color $cubik;
+		}
+		&:focus-within {
+			outline: none;
+			border-color: $header-main-color;
+
+			&::placeholder {
+				color: $header-main-color;
+			}
+		}
+	}
+	&__comment {
+		height: 76px;
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+		resize: none;
+		color: $header-main-color;
+		padding: 8px 0;
+		margin-bottom: 44px;
+		transition: color $cubik, border-color $cubik;
+		&::placeholder {
+			@include font(600, 11px, 15px, 0.1em);
+			color: rgba(157, 164, 189, 0.4);
+			text-transform: uppercase;
+			transition: color $cubik, border-color $cubik;
+		}
+		&:focus-within {
+			outline: none;
+			border-color: $header-main-color;
+
+			&::placeholder {
+				color: $header-main-color;
+			}
+		}
+	}
+	&__btn {
+		margin: 0 auto;
+		padding: 12px 38px;
+	}
+	&__address-header {
+		display: block;
+		@extend %header;
+		color: $header-main-color;
+		margin: 0 auto 40px;
+	}
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	&__address {
+		margin-bottom: 44px;
+	}
+	&__link {
+		@include font(400, 18px, 30px, 0.02em);
+		color: $light-text-color;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+	&__work-time {
+		@include font(400, 18px, 30px, 0.02em);
+		color: $light-text-color;
+	}
+	&__subtitle {
+		@extend %subtitle;
+		color: $header-main-color;
+
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: rgba(157, 164, 189, 0.4);
+			margin-right: 20px;
+			left: 0;
+			top: 50%;
+		}
+	}
+	&__icon {
+		margin-right: 16px;
+	}
+}
+.address-wrapper {
+	background: linear-gradient(#11131990, #11131990), url(/images/contact/contact-bg-m.jpg);
+	padding-top: 84px;
+	padding-bottom: 84px;
+}

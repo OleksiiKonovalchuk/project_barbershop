@@ -1,0 +1,32 @@
+.footer {
+	padding: 44px 0;
+	&__list {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 20px;
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: $dark-subtitle-color;
+			margin-right: 20px;
+			left: 40%;
+			top: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__item:not(:last-child) {
+		margin-right: 40px;
+	}
+	&__link {
+		@include font(600, 11px, 15px, 0.2em);
+		color: $dark-subtitle-color;
+	}
+	&__copyright {
+		@include font(600, 11px, 15px, 0.2em);
+		color: $light-text-color;
+	}
+}

@@ -1,0 +1,74 @@
+.advantages {
+	&__subtitle {
+		@extend %subtitle;
+		color: $dark-subtitle-color;
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: $dark-subtitle-color;
+			margin-right: 20px;
+			left: 0;
+			top: 50%;
+		}
+	}
+	&__header {
+		@extend %header;
+		color: $dark-subtitle-color;
+		margin-bottom: 20px;
+	}
+	&__descr {
+		@include font(400, 18px, 30px, 0.02em);
+		color: $dark-text-color;
+		margin-bottom: 44px;
+	}
+	&__list {
+		max-height: 326px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 193px;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+		&:last-child {
+			padding-top: 30px;
+		}
+	}
+	&__number {
+		position: relative;
+		@include font(700, 42px, 57px, 0.05em);
+		color: $dark-subtitle-color;
+		display: block;
+		margin-bottom: 6px;
+	}
+	&__cell {
+		width: 100%;
+		height: 133px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 20px 32px;
+		position: relative;
+		@include font(600, 11px, 15px);
+		color: $dark-subtitle-color;
+		background-color: #f7f7f7;
+		&:first-child {
+			margin-bottom: 30px;
+		}
+	}
+	&__plus {
+		position: absolute;
+		right: -15px;
+		top: 9px;
+	}
+}

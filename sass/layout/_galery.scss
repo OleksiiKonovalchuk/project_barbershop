@@ -1,0 +1,20 @@
+.gallery {
+	&__subtitle {
+		@extend %subtitle;
+		margin-bottom: 44px;
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: $dark-subtitle-color;
+			margin-right: 20px;
+			left: 0;
+			top: 25%;
+		}
+	}
+	&__item:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}

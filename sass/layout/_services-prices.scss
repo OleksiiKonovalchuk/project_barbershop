@@ -1,0 +1,46 @@
+.services {
+	background: linear-gradient(#11131990, #11131990), url(/images/services/services-bg-m.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	&__subtitle {
+		@extend %subtitle;
+		color: rgba(157, 164, 189, 0.6);
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: rgba(157, 164, 189, 0.6);
+			margin-right: 20px;
+			left: 0;
+			top: 50%;
+		}
+	}
+	&__header {
+		font-family: $header-font-family;
+		@extend %header;
+		color: $header-main-color;
+		margin-bottom: 44px;
+	}
+	&__grid {
+		@include font(400, 14px, 30px, 0.02em);
+		color: $light-text-color;
+		padding: 30px;
+		background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+		margin-bottom: 50px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+	&__cell {
+		height: 1px;
+		background: rgba(157, 164, 189, 0.12);
+	}
+	&__btn {
+		margin: 0 auto;
+	}
+}

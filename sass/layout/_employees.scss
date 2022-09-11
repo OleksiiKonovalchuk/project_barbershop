@@ -1,0 +1,70 @@
+.employees {
+	background-color: #f7f7f7;
+	&__subtitle {
+		@extend %subtitle;
+		color: $dark-subtitle-color;
+		&::before {
+			position: absolute;
+			display: inline-block;
+			content: "";
+			width: 60px;
+			height: 1px;
+			background-color: $dark-subtitle-color;
+			margin-right: 20px;
+			left: 0;
+			top: 50%;
+		}
+	}
+	&__header {
+		@extend %header;
+		color: $dark-subtitle-color;
+		margin-bottom: 44px;
+	}
+
+	&__item {
+		text-align: center;
+		&:not(:last-child) {
+			margin-bottom: 64px;
+		}
+	}
+	&__name {
+		@include font(400, 18px, 25px, 0.02em);
+		color: $dark-subtitle-color;
+		margin-top: 30px;
+		margin-bottom: 8px;
+	}
+	&__position {
+		@include font(400, 14px, 19px, 0.02em);
+		color: $accent-color;
+		margin-bottom: 30px;
+	}
+}
+.socials {
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		background-color: $header-main-color;
+		color: $dark-subtitle-color;
+		transition: color $cubik;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+	&__icon {
+		fill: currentColor;
+	}
+}

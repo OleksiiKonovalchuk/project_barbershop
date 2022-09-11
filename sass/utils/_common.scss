@@ -29,7 +29,7 @@ button {
 	margin: 0;
 }
 section {
-	padding: 84px 31px;
+	padding: 84px 0;
 }
 
 .list {
@@ -41,9 +41,12 @@ section {
 .link {
 	text-decoration: none;
 	color: inherit;
-
+	transition: color $cubik;
 	&:hover,
 	&:focus {
 		color: $accent-color;
 	}
+}
+.subtitle-wrapper {
+	position: relative;
 }

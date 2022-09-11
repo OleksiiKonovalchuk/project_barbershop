@@ -1,8 +1,6 @@
 .about-us {
 	&__subtitle {
 		@extend %subtitle;
-		margin-bottom: 20px;
-		margin-left: 80px;
 		&::before {
 			position: absolute;
 			display: inline-block;
