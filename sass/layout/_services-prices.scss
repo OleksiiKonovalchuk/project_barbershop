@@ -36,11 +36,83 @@
 		justify-content: space-between;
 		align-items: baseline;
 	}
-	&__cell {
+	&__cell-1 {
 		height: 1px;
+		width: 144px;
 		background: rgba(157, 164, 189, 0.12);
 	}
+	&__cell-2 {
+		height: 1px;
+		width: 148px;
+		background: rgba(157, 164, 189, 0.12);
+	}
+	&__cell-3 {
+		height: 1px;
+		width: 177px;
+		background: rgba(157, 164, 189, 0.12);
+	}
+	&__cell-4 {
+		height: 1px;
+		width: 91px;
+		background: rgba(157, 164, 189, 0.12);
+	}
+	&__cell-5 {
+		height: 1px;
+		width: 144px;
+		background: rgba(157, 164, 189, 0.12);
+	}
+	&__cell-6 {
+		height: 1px;
+		width: 119px;
+		background: rgba(157, 164, 189, 0.12);
+	}
+	&__cell-7 {
+		height: 1px;
+		width: 74ppx;
+		background: rgba(157, 164, 189, 0.12);
+	}
+	&__cell-8 {
+		height: 1px;
+		width: 89px;
+		background: rgba(157, 164, 189, 0.12);
+	}
+
 	&__btn {
 		margin: 0 auto;
+	}
+}
+@media screen and (min-width: $tablet) {
+	.services {
+		&__grid {
+			width: 690px;
+			@include font(400, 18px, 30px, 0.02em);
+		}
+		&__row:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		&__cell-1 {
+			width: 340px;
+		}
+		&__cell-2 {
+			width: 347px;
+		}
+		&__cell-3 {
+			width: 376px;
+		}
+		&__cell-4 {
+			width: 270px;
+		}
+		&__cell-5 {
+			width: 327px;
+		}
+		&__cell-6 {
+			width: 306px;
+		}
+		&__cell-7 {
+			width: 247px;
+		}
+		&__cell-8 {
+			width: 267px;
+		}
 	}
 }

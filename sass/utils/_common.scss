@@ -27,9 +27,13 @@ address {
 button {
 	display: block;
 	margin: 0;
+	padding: 0;
 }
 section {
 	padding: 84px 0;
+	@media screen and (min-width: $tablet) {
+		padding: 100px 0;
+	}
 }
 
 .list {

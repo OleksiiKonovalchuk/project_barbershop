@@ -68,3 +68,11 @@
 		fill: currentColor;
 	}
 }
+@media screen and (min-width: $tablet) {
+	.employees {
+		&__container {
+			padding-left: 159px;
+			padding-right: 159px;
+		}
+	}
+}
