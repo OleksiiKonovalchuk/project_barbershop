@@ -115,3 +115,40 @@
 	padding-top: 84px;
 	padding-bottom: 84px;
 }
+@media screen and (min-width: $tablet) {
+	.contacts {
+		&__address-header {
+			margin-left: 0;
+		}
+		&__form {
+			text-align: left;
+		}
+		&__input {
+			width: calc((100% - 30px) / 2);
+			display: inline-block;
+			& + & {
+				margin-left: 30px;
+			}
+		}
+		&__comment {
+			margin-top: 44px;
+		}
+		&__btn {
+			margin: 0 auto 0 0;
+		}
+		&__address {
+			width: calc((100% - 30px) / 2);
+		}
+		&__link {
+			max-width: 240px;
+		}
+	}
+	.address-wrapper {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.address-contacts__wrapper {
+		display: flex;
+		gap: 30px;
+	}
+}

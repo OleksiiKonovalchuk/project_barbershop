@@ -21,12 +21,28 @@
 	&__item:not(:last-child) {
 		margin-right: 40px;
 	}
-	&__link {
+	&__socials {
 		@include font(600, 11px, 15px, 0.2em);
 		color: $dark-subtitle-color;
 	}
+
 	&__copyright {
 		@include font(600, 11px, 15px, 0.2em);
 		color: $light-text-color;
+	}
+}
+@media screen and (min-width: $tablet) {
+	.footer {
+		&__container {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+		}
+		&__list {
+			margin-bottom: 0;
+			&::before {
+				left: -40%;
+			}
+		}
 	}
 }

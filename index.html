@@ -30,7 +30,7 @@
 						<li class="header__item"><a href="" class="header__link link">Контакты</a></li>
 					</ul>
 				</nav>
-				<button class="header__btn btn">онлайн-запись</button>
+				<a class="header__btn btn">онлайн-запись</a>
 				<button class="mobile-menu__btn js-open-menu">
 					<svg class="mobile-menu__icon" width="40" height="40">
 						<use href="./images/symbol-defs.svg#burger-icon"></use></svg></button></div
@@ -73,8 +73,34 @@
 			<section class="about-us">
 				<div class="container about-us__container"
 					><ul class="about-us__list list">
-						<li class="about-us__item"><img src="./images/about-us/about-us1-t.jpg" alt="" class="about-us__img" /></li>
-						<li class="about-us__item"><img src="./images/about-us/about-us2-t.jpg" alt="" class="about-us__img" /></li>
+						<li class="about-us__item"
+							><picture>
+								<source
+									srcset="./images/about-us/about-us1-d.jpg 1x, ./images/about-us/about-us1-d@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+
+								<source
+									srcset="./images/about-us/about-us1-t.jpg 1x, ./images/about-us/about-us1-t@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+
+								<img src="./images/about-us/about-us1-t.jpg" alt="photo 1" class="about-us__img" /> </picture
+						></li>
+						<li class="about-us__item"
+							><picture>
+								<source
+									srcset="./images/about-us/about-us2-d.jpg 1x, ./images/about-us/about-us2-d@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+
+								<source
+									srcset="./images/about-us/about-us2-t.jpg 1x, ./images/about-us/about-us2-t@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+
+								<img src="./images/about-us/about-us2-t.jpg" alt="photo 1" class="about-us__img" /> </picture
+						></li>
 					</ul>
 					<div class="about-us__wrapper"
 						><div class="subtitle-wrapper"><p class="about-us__subtitle">О НАС</p></div>
@@ -85,7 +111,7 @@
 							руки нашего мастеро уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
 							волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p
 						>
-						<button class="about-us__btn btn">онлайн-запись</button></div
+						<a class="about-us__btn btn">онлайн-запись</a></div
 					></div
 				>
 			</section>
@@ -136,7 +162,7 @@
 							<td class="services__cell-8"></td>
 							<td>от 200 грн.</td>
 						</tr></table
-					><button class="services__btn btn">онлайн-запись</button></div
+					><a class="services__btn btn">онлайн-запись</a></div
 				>
 			</section>
 			<section class="advantages">
@@ -187,7 +213,19 @@
 					<h2 class="employees__header">Наши мастера</h2>
 					<ul class="employees__list list">
 						<li class="employees__item">
-							<img src="./images/employees/john-m.jpg" alt="" class="employees__img" />
+							<picture>
+								<source
+									srcset="./images/employees/john-d.jpg 1x, ./images/employees/john-d@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/><source
+									srcset="./images/employees/john-t.jpg 1x, ./images/employees/john-t@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/><source
+									srcset="./images/employees/john-m.jpg 1x, ./images/employees/john-m@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/><img src="./images/employees/john-m.jpg" alt="John Smith" class="employees__img" />
+							</picture>
+
 							<p class="employees__name" lang="en">John Smith</p>
 							<p class="employees__position" lang="en">Extreme Barber</p>
 							<ul class="socials__list list">
@@ -221,8 +259,20 @@
 								</li>
 							</ul>
 						</li>
-						<li class="employees__item">
-							<img src="./images/employees/michele-m.jpg" alt="" class="employees__img" />
+						<li class="employees__item"
+							><picture>
+								<source
+									srcset="./images/employees/michele-d.jpg 1x, ./images/employees/michele-d@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/><source
+									srcset="./images/employees/michele-t.jpg 1x, ./images/employees/michele-t@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/><source
+									srcset="./images/employees/michele-m.jpg 1x, ./images/employees/michele-m@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/><img src="./images/employees/michele-m.jpg" alt="Michele Doe" class="employees__img" />
+							</picture>
+
 							<p class="employees__name" lang="en">Michele Doe</p>
 							<p class="employees__position" lang="en">Extreme Barber</p>
 							<ul class="socials__list list">
@@ -257,7 +307,18 @@
 							</ul>
 						</li>
 						<li class="employees__item">
-							<img src="./images/employees/alan-m.jpg" alt="" class="employees__img" />
+							<picture>
+								<source
+									srcset="./images/employees/alan-d.jpg 1x, ./images/employees/alan-d@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/><source
+									srcset="./images/employees/alan-t.jpg 1x, ./images/employees/alan-t@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/><source
+									srcset="./images/employees/alan-m.jpg 1x, ./images/employees/alan-m@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/><img src="./images/employees/alan-m.jpg" alt="Alan Black" class="employees__img" />
+							</picture>
 							<p class="employees__name" lang="en">Alan Black</p>
 							<p class="employees__position" lang="en">Extreme Barber</p>
 							<ul class="socials__list list">
@@ -294,22 +355,63 @@
 				></div>
 			</section>
 			<section class="gallery">
-				<div class="container"
-					><div class="subtitle-wrapper"
+				<div class="container">
+					<h2 class="visually-hidden">Галерея</h2>
+					<div class="subtitle-wrapper"
 						><p class="gallery__subtitle">На латинском языке “барба” означает “борода”</p></div
 					><ul class="gallery__list list">
 						<li class="gallery__item"
-							><img src="./images/gallery/gallery1-m.jpg" alt="картинка 1" class="gallery__img"
-						/></li>
+							><picture>
+								<source
+									srcset="./images/gallery/gallery1-d.jpg 1x, ./images/gallery/gallery1-d@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/><source
+									srcset="./images/gallery/gallery1-t.jpg 1x, ./images/gallery/gallery1-t@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/><source
+									srcset="./images/gallery/gallery1-m.jpg 1x, ./images/gallery/gallery1-m@2x.jpg 2x"
+									media="(max-width: 767px)"
+								/><img src="./images/gallery/gallery1-m.jpg" alt="Image 1" class="gallery__img" /> </picture
+						></li>
 						<li class="gallery__item"
-							><img src="./images/gallery/gallery2-m.jpg" alt="картинка 2" class="gallery__img"
-						/></li>
+							><picture>
+								<source
+									srcset="./images/gallery/gallery2-d.jpg 1x, ./images/gallery/gallery2-d@2x.jpg 2x"
+									media="(min-width: 1200px)" /><source
+									srcset="./images/gallery/gallery2-t.jpg 1x, ./images/gallery/gallery2-t@2x.jpg 2x"
+									media="(min-width: 768px)" /><source
+									srcset="./images/gallery/gallery2-m.jpg 1x, ./images/gallery/gallery2-m@2x.jpg 2x"
+									media="(max-width: 767px)" /><img
+									src="./images/gallery/gallery2-m.jpg"
+									alt="Image 2"
+									class="gallery__img" /></picture
+						></li>
 						<li class="gallery__item"
-							><img src="./images/gallery/gallery3-m.jpg" alt="картинка 3" class="gallery__img"
-						/></li>
+							><picture>
+								<source
+									srcset="./images/gallery/gallery3-d.jpg 1x, ./images/gallery/gallery3-d@2x.jpg 2x"
+									media="(min-width: 1200px)" /><source
+									srcset="./images/gallery/gallery3-t.jpg 1x, ./images/gallery/gallery3-t@2x.jpg 2x"
+									media="(min-width: 768px)" /><source
+									srcset="./images/gallery/gallery3-m.jpg 1x, ./images/gallery/gallery3-m@2x.jpg 2x"
+									media="(max-width: 767px)" /><img
+									src="./images/gallery/gallery3-m.jpg"
+									alt="Image 3"
+									class="gallery__img" /></picture
+						></li>
 						<li class="gallery__item"
-							><img src="./images/gallery/gallery4-m.jpg" alt="картинка 4" class="gallery__img"
-						/></li> </ul
+							><picture>
+								<source
+									srcset="./images/gallery/gallery4-d.jpg 1x, ./images/gallery/gallery4-d@2x.jpg 2x"
+									media="(min-width: 1200px)" /><source
+									srcset="./images/gallery/gallery4-t.jpg 1x, ./images/gallery/gallery4-t@2x.jpg 2x"
+									media="(min-width: 768px)" /><source
+									srcset="./images/gallery/gallery4-m.jpg 1x, ./images/gallery/gallery4-m@2x.jpg 2x"
+									media="(max-width: 767px)" /><img
+									src="./images/gallery/gallery4-m.jpg"
+									alt="Image 4"
+									class="gallery__img" /></picture
+						></li> </ul
 				></div>
 			</section>
 			<section class="contacts">
@@ -329,41 +431,44 @@
 				>
 				<div class="container address-wrapper"
 					><h2 class="contacts__address-header">Контакты</h2
-					><address class="contacts__address"
-						><ul class="contacts__list list">
-							<li class="contacts__item"
-								><a href="" class="contacts__link"
-									><svg class="contacts__icon" width="24" height="24">
-										<use href="./images/symbol-defs.svg#location-icon"></use>
-									</svg>
-									ул. Васильковая, 7А, Киев, 08132</a
-								></li
-							>
-							<li class="contacts__item"
-								><a href="" class="contacts__link"
-									><svg class="contacts__icon" width="24" height="24">
-										<use href="./images/symbol-defs.svg#phone-icon"></use>
-									</svg>
-									+38 044 111 11 11</a
-								></li
-							>
-							<li class="contacts__item"
-								><a href="" class="contacts__link"
-									><svg class="contacts__icon" width="24" height="24">
-										<use href="./images/symbol-defs.svg#mail-icon"></use>
-									</svg>
-									barbershop@email.com</a
-								></li
-							>
-						</ul></address
+					><div class="address-contacts__wrapper"
+						><address class="contacts__address"
+							><ul class="contacts__list list">
+								<li class="contacts__item"
+									><a href="" class="contacts__link"
+										><svg class="contacts__icon" width="24" height="24">
+											<use href="./images/symbol-defs.svg#location-icon"></use>
+										</svg>
+										ул. Васильковая, 7А, Киев, 08132</a
+									></li
+								>
+								<li class="contacts__item"
+									><a href="" class="contacts__link"
+										><svg class="contacts__icon" width="24" height="24">
+											<use href="./images/symbol-defs.svg#phone-icon"></use>
+										</svg>
+										+38 044 111 11 11</a
+									></li
+								>
+								<li class="contacts__item"
+									><a href="" class="contacts__link"
+										><svg class="contacts__icon" width="24" height="24">
+											<use href="./images/symbol-defs.svg#mail-icon"></use>
+										</svg>
+										barbershop@email.com</a
+									></li
+								>
+							</ul></address
+						><div class="work-time__wrapper"
+							><div class="subtitle-wrapper"><p class="contacts__subtitle">время работы</p></div>
+							<p class="contacts__work-time">Ежедневно с 9:00 до 22:00</p></div
+						></div
 					>
-					<div class="subtitle-wrapper"><p class="contacts__subtitle">время работы</p></div>
-					<p class="contacts__work-time">Ежедневно с 9:00 до 22:00</p></div
-				>
+				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="container"
+			<div class="container footer__container"
 				><ul class="footer__list list">
 					<li class="footer__item"><a href="" class="footer__socials link">Instagram</a></li>
 					<li class="footer__item"><a href="" class="footer__socials link">Youtube</a></li>
